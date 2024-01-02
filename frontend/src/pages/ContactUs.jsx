@@ -5,7 +5,7 @@ import Header from "../components/Layout/Header";
 const ContacUS = () => {
   return (
     <div>
-        <Header activeHeading={5} />
+        <Header activeHeading={3} />
         ContacUS
         <Footer />
     </div>
