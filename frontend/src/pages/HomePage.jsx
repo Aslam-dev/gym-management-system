@@ -1,8 +1,15 @@
 import React from 'react'
+import Header from "../components/Layout/Header";
+import Footer from "../components/Layout/Footer";
 
-function HomePage() {
+const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+       <Header activeHeading={1} />
+      HomePage
+        <Footer />
+    
+    </div>
   )
 }
 

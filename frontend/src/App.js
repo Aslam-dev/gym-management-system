@@ -1,7 +1,16 @@
 import React from 'react'
 import "./App.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { LoginPage, SignupPage } from './routes/Routes';
+import { 
+  HomePage, 
+  LoginPage, 
+  SignupPage,
+  ContactUs,
+  Gallery,
+  Leaderboard,
+
+} from './routes/Routes';
+
 
 function App() {
   return (
@@ -9,7 +18,10 @@ function App() {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignupPage />} />
-        {/* Add other routes as needed */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
       </Routes>
     </BrowserRouter>
   );
